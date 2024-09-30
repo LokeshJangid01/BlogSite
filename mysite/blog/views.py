@@ -28,5 +28,6 @@ def post_detail(request, slug):
     context = {
         'post': post,
     }
-    print(post.content)
+    print(post.images.all())
+    
     return render(request, 'post_detail.html', context)
