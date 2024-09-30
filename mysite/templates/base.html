@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="h-full">
+
+    <head>
+        <title>Django Central</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <meta name="google" content="notranslate" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+    </head>
+
+    <body class="bg-green-900 text-white flex flex-col min-h-screen">
+    <!-- <style>
+            body { 
+            font-family: "Roboto", sans-serif;
+            font-size: 17px;
+            background-color: #0b0a12;
+        }
+        .shadow {
+            box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+        }
+        .btn-danger {
+            color: #fff;
+            background-color: #f00000;
+            border-color: #dc281e;
+        }
+        .masthead {
+            background: #1b2842;
+            height: auto;
+            padding-bottom: 15px;
+            box-shadow: 0 16px 48px #E3E7EB;
+            padding-top: 10px;
+        }
+    </style> -->
+
+        <!-- Navigation -->
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-dark shadow" id="mainNav">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="{% url 'home' %}">NIT BACKCHODI</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-white" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto text-white">
+                        <li class="nav-item text-white">
+                            <a class="nav-link text-white font-weight-bold" href="#">About</a>
+                        </li>
+                        <li class="nav-item text-white">
+                            <a class="nav-link text-white font-weight-bold" href="#">Policy</a>
+                        </li>
+                        <li class="nav-item text-white">
+                            <a class="nav-link text-white font-weight-bold" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+        <!-- Navigation -->
+        <nav class="bg-green-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center">
+                        <a href="{% url 'home' %}" class="text-white font-bold text-xl">NIT BACKCHODI</a>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Policy</a>
+                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                        </div>
+                    </div>
+                    <div class="md:hidden">
+                        <button type="button" class="text-gray-400 hover:text-white focus:outline-none focus:text-white" aria-label="Toggle menu">
+                            <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Policy</a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="flex-grow">
+            {% block content %}
+            <!-- Content Goes here -->
+            {% endblock content %}
+        </main>
+        
+        
+        <footer class="bg-lime-800 text-white mt-auto">
+            <div class="container mx-auto px-4 py-3 text-center">
+                <p>&copy; 2024 BACKCHOD CORP</p>
+            </div>
+        </footer>
+    </body>
+</html>
